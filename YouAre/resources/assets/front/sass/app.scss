@@ -1,0 +1,34 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Libraries
+@import '~slick-carousel/slick/slick.scss';
+@import '~@mdi/font/css/materialdesignicons.min.css';
+
+// Variables
+@import 'variables';
+
+//Typography
+@import 'typography';
+
+//Layout
+@import 'layout';
+
+//Global
+@import 'global';
+
+//Components
+@import 'components/buttons';
+@import 'components/nav-bar';
+@import 'components/footer';
+@import 'components/section-1';
+@import 'components/title-section';
+@import 'home-cards';
+@import 'initial-cards';
+@import 'pages/home/slider-section.scss';
+@import 'pages/home/section-3.scss';
+@import 'pages/home/home-slider.scss';

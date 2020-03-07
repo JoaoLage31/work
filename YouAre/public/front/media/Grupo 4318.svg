@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111.408" height="111.408" viewBox="0 0 111.408 111.408">
+  <g id="Grupo_4318" data-name="Grupo 4318" transform="translate(11467 12914)">
+    <g id="Grupo_4294" data-name="Grupo 4294" transform="translate(-11411.296 -12914)">
+      <g id="Grupo_4293" data-name="Grupo 4293">
+        <rect id="Retângulo_810" data-name="Retângulo 810" width="55.704" height="55.704" fill="none"/>
+        <path id="Caminho_3427" data-name="Caminho 3427" d="M131.745,74.953l18.568,18.568-18.568,37.136Z" transform="translate(-131.745 -74.953)" fill="#4192d0"/>
+        <path id="Caminho_3428" data-name="Caminho 3428" d="M188.108,130.658,169.54,112.09l18.568-37.136Z" transform="translate(-132.404 -74.953)" fill="#4192d0"/>
+      </g>
+      <path id="Caminho_3431" data-name="Caminho 3431" d="M131.745,130.658l18.568-37.136,37.136-18.568L168.881,112.09Z" transform="translate(-131.745 -74.953)" fill="#2e3e91"/>
+    </g>
+    <g id="Grupo_4295" data-name="Grupo 4295" transform="translate(-11411.296 -12858.296)">
+      <rect id="Retângulo_811" data-name="Retângulo 811" width="55.704" height="55.704" fill="none"/>
+      <path id="Caminho_3432" data-name="Caminho 3432" d="M131.745,131.646l18.568,18.568-18.568,37.136Z" transform="translate(-131.745 -131.646)" fill="#4192d0"/>
+      <path id="Caminho_3433" data-name="Caminho 3433" d="M188.108,187.351,169.54,168.783l18.568-37.136Z" transform="translate(-132.404 -131.646)" fill="#4192d0"/>
+    </g>
+    <path id="Caminho_3436" data-name="Caminho 3436" d="M131.745,187.351l18.568-37.136,37.136-18.568-18.568,37.136Z" transform="translate(-11543.041 -12989.942)" fill="#2e3e91"/>
+    <g id="Grupo_4298" data-name="Grupo 4298" transform="translate(-11467 -12914)">
+      <g id="Grupo_4297" data-name="Grupo 4297">
+        <rect id="Retângulo_812" data-name="Retângulo 812" width="55.704" height="55.704" fill="none"/>
+        <path id="Caminho_3437" data-name="Caminho 3437" d="M75.052,74.953,93.62,93.522,75.052,130.658Z" transform="translate(-75.052 -74.953)" fill="#4192d0"/>
+        <path id="Caminho_3438" data-name="Caminho 3438" d="M131.416,130.658,112.847,112.09l18.568-37.136Z" transform="translate(-75.711 -74.953)" fill="#4192d0"/>
+      </g>
+      <path id="Caminho_3441" data-name="Caminho 3441" d="M75.052,130.658,93.62,93.522l37.136-18.568L112.188,112.09Z" transform="translate(-75.052 -74.953)" fill="#2e3e91"/>
+    </g>
+    <g id="Grupo_4299" data-name="Grupo 4299" transform="translate(-11467 -12858.296)">
+      <rect id="Retângulo_813" data-name="Retângulo 813" width="55.704" height="55.704" fill="none"/>
+      <path id="Caminho_3442" data-name="Caminho 3442" d="M75.052,131.646,93.62,150.214,75.052,187.351Z" transform="translate(-75.052 -131.646)" fill="#4192d0"/>
+      <path id="Caminho_3443" data-name="Caminho 3443" d="M131.416,187.351l-18.568-18.568,18.568-37.136Z" transform="translate(-75.711 -131.646)" fill="#4192d0"/>
+    </g>
+    <path id="Caminho_3446" data-name="Caminho 3446" d="M75.052,187.351,93.62,150.214l37.136-18.568-18.568,37.136Z" transform="translate(-11542.052 -12989.942)" fill="#2e3e91"/>
+  </g>
+</svg>

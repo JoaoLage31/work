@@ -1,0 +1,265 @@
+.nav{
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    a{
+        text-decoration: none;
+    }
+
+    &__right_side__menu{
+        width: 25vw;
+        
+        &__log-in{
+            background-color: $beje;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            align-items: center;
+            height: 10vh;
+
+            &__element{
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
+            }
+
+        }
+    }
+
+    &__right_side__tilles{
+        overflow: hidden;
+    }
+
+    &__right_side__button{
+        background-color:$beje;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        margin-right: 2rem;
+        position: relative;
+        transition: 0.4s;
+    }
+
+    &__right_side__button:after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    &__right_side__button:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+
+    &__menu{
+        display: flex;
+
+        &__img{
+            margin-right: 4rem;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0rem!important;
+    }
+    &__buttons2{
+        display: none;
+    }
+
+    & li{
+        list-style: none;
+        margin-right: 2rem;
+    }
+
+    & a{
+        color: white;
+    }
+
+    
+}
+
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $azul_claro;
+    background-color: $azul_claro;
+    overflow-x: hidden;
+    transition: 0.35s;
+    z-index: 5;
+    display: flex;
+  }
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    top: 7vh;
+  }
+  
+  .overlay a {
+    display: block;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  
+ .top-side{
+     height: 90vh;
+     margin: auto;
+     padding: 3rem;
+     padding-top: 2rem;
+ }
+
+ .closebtn{
+     font-size: 1.5rem;
+     color: #0D122B!important;
+ }
+
+
+ .menu-hover-img{
+      opacity: 0;
+      padding-bottom: 5px;
+ }
+ .menu-hover-img-2{
+    display: none;
+}
+
+
+ .hover:hover > .menu-hover-img{
+    opacity: 1;
+    width: 25px;
+    margin: auto;
+ }
+
+ .hover2:hover > .menu-hover-img{
+    display: block;
+    width: 25px;
+    margin: auto;
+ }
+
+ .hover2:hover > .menu-hover-img-2{
+    display: block;
+    margin: auto;
+    margin-top: 0.7rem;
+ }
+
+ .hover2:hover a{
+     font-style: bold;
+     animation: shake2 0.8s infinite;
+ }
+
+ @keyframes shake2 {
+    0% { transform: translate(0px, 1px); }
+    50% { transform: translate(8px, 1px); }
+    100% { transform: translate(0px, 1px); }
+  }
+
+
+  .section1__row__tilles_menu{
+    width: 18vh;
+    height: 18vh;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.section1__row__tilles_menu:hover{
+    scale: 1.05;
+    -webkit-transform:scale(1.05);
+    z-index: 2;
+}
+
+@include media-breakpoint-down(md) {
+    .nav{
+        padding: 1rem;
+        &__right_side{
+            &__tilles{
+                display: none;
+            }
+
+            &__menu{
+                width: 100%;
+            }
+        }
+
+        .top-side{
+            padding: 1rem;
+            padding-top: 2rem;
+        }
+
+    
+    
+        &__right_side__button{
+            padding: 0.5rem;
+            margin-right: 1rem;
+        }
+    }
+    .menu-open{
+        margin: auto;
+    }   
+}
+
+@include media-breakpoint-down(sm) {
+    .nav{
+        padding: 1rem;
+        &__right_side{
+            &__tilles{
+                display: none;
+            }
+
+            &__menu{
+                width: 100%;
+            }
+        }
+
+        .top-side{
+            padding: 1rem;
+            padding-top: 2rem;
+        }
+
+        li{
+            margin-right: 0;
+        }
+
+        &__buttons{
+            display: none;
+            align-items: center;
+            margin-bottom: 0rem!important;
+        }
+        &__buttons2{
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-top-style: solid;
+            border-top-color: #fff;
+            border-top-width: 1px;
+            margin-top: 1.5rem;
+        }
+    
+        &__right_side__button{
+            padding: 0.5rem;
+            margin-right: 1rem;
+        }
+    }
+    .menu-open{
+        margin: auto;
+    }   
+}

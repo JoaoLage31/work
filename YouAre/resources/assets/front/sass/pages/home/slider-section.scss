@@ -1,0 +1,135 @@
+.my-edit
+{
+    display: flex!important;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hr.style1{
+    width: 0px!important;
+}
+
+
+.slide_section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.hello{
+    position: relative;
+}
+
+.here{
+    width: 100%;
+display: flex!important;
+justify-content: space-evenly!important;
+}
+.arrange{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-top: 5vh;
+}
+.aside{
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    background-color: $beje;
+    width: 50%;
+    margin-top: 5vh;
+}
+
+.slick-dots li button { 
+    font-size: 0; 
+ }
+
+.aside:nth-child(1){
+    left: 0;
+    margin-left: -45%;
+}
+
+.aside:nth-child(2){
+    right: 0;
+    margin-right: -45%;
+}
+
+
+
+@media only screen and (max-width: 880px) {
+    .arrange {
+        display:none;
+    }
+}
+    
+
+.justify{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-arrow{
+    color: $beje;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.slider_section_prev{
+    position: absolute;
+}
+
+.nav__right_side__tilles{
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.next2{
+    padding-top: 8vh;
+}
+
+.prev2{
+    padding-top: 8vh;
+}
+
+
+
+.slider-container{
+    .slick-slide{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1079px) {
+    .aside {
+        display: none !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .slider-container{
+        .slick-slide{
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .slider-container{
+        display: block;
+    }
+    .slider-container{
+        .slick-slide{
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+
+.filterDiv {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+
+
+  h1{
+    margin: 0;
+    padding: 0;
+  }
+
+  [data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 2s;
+}
+
+html, body{
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}

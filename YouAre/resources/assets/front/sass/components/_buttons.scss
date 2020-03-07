@@ -1,0 +1,40 @@
+.btn_a a{
+    text-decoration: none;
+}
+
+.button_section2 {
+    color: white;
+    display: flex;
+    padding: 0.7rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+    border-radius: 0.3rem;
+    margin: auto;
+    border-color: transparent!important;
+    z-index: 1;
+    margin-top: -1.5rem;
+    position: relative;
+        background: #E1B57C;
+        display: inline-block;
+        text-decoration: none;
+
+    &__text{
+        margin-bottom:0rem !important;
+        font-size: 1.1rem;
+        padding-top: 0.1rem;
+    }
+
+    &:hover{
+        color: white;
+    }
+
+    &:hover .button_section2__img{
+        animation: shake 1s infinite;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(0px, 1px); }
+    50% { transform: translate(-8px, 1px); }
+    100% { transform: translate(0px, 1px); }
+  }
