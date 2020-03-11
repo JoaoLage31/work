@@ -13,7 +13,7 @@
     @endforeach
 </div>
 <div class="blank"></div>
-
+<div id="here">
 @foreach($data as $key=>$collection)
 
 <div class="slide_section2  homes_for_rent my-edi {{$key == 0 ? '' : 'none'}}" id="slide{{$key}}">
@@ -40,9 +40,9 @@
                             'field__2'=>$item['field__2'],
                             'field__3'=>$item['field__3'],
                             'field__4'=>$item['field__4'],
-                            'wifi'=>$item['wifi'],
-                            'kitchenspecs'=>$item['kitchenspecs'],
-                            'otherspecs'=>$item['otherspecs'],
+                            'inidvidual_field_1'=>$item['inidvidual_field_1'],
+                            'inidvidual_field_2'=>$item['inidvidual_field_2'],
+                            'inidvidual_field_3'=>$item['inidvidual_field_3'],
                             'deal'=>$item['deal'],
                             'price'=>$item['price'],
                             ])
@@ -51,6 +51,8 @@
             </div>
         @endforeach
     </div>
+  </div>
+</div>
 @endforeach
 
 @push('scripts')
@@ -66,10 +68,9 @@ $(window).bind('resize', function(e)
   }, 1);
 });
 */
-$(window).resize(function(){
-  //$('.slide_section2').slick('refresh');
+$( window ).resize(function() {
+  location.reload(true);
 });
-
 
 function filterSelection(el) {
       $('.btn').removeClass('active2');    
@@ -77,12 +78,10 @@ function filterSelection(el) {
       var idSlide = $(el).attr("data-target");
       $(el).addClass('active2');
       $(idSlide).removeClass('none');
-
-      
   //  $(target).slick('refresh');
   //  $(target + " .slide_home_individual").slick('unslick');
   //  $(target + " .slide_home_individual").slick('getSliderSettings()');
-     }
+}
 
      $('.slector-slick').on('click', function(){
       filterSelection(this);
@@ -101,6 +100,8 @@ $('.slide_section2').on('beforeChange', function(event, slick, currentSlide, nex
     $('.blank').remove("add__Blank");
 });
 
+
+
 $(window).on('resize orientationchange', function() {
   $( ".slide_section2" ).each(function( index , el ) {
     $(el)[0].slick.resize();
@@ -110,13 +111,11 @@ $(window).on('resize orientationchange', function() {
       console.log($(target))
       $(target)[0].slick.resize();
       $(target)[0].slick.refresh();
+      
     });
 });
 });
 
-$(window).on('resize orientationchange', function() {
-
-});
 
 $('.slide_section2').slick({
     centerMode: true,
@@ -127,7 +126,6 @@ $('.slide_section2').slick({
     nextArrow: false,
     responsive: [
       {
-      centerMode: false,
       breakpoint: 1180,
       settings: {
         slidesToShow:2,

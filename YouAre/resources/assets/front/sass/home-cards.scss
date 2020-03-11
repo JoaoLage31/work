@@ -47,8 +47,8 @@
 
 .slide_home_individual{
     .slick-slide .home__img {
-        max-height: 36.3vh;
-        min-height: 36.2vh;
+        max-height: 17vw;
+        min-height: 17vw;
         background-size: cover;
         background-repeat: no-repeat;
      }
@@ -96,15 +96,24 @@
 }
 
 @include media-breakpoint-down(xl) {
-    
+    .span{
+        margin-top: 0.9vh;
+        margin-right: 0.4rem;
+        margin-left: 0.4rem;
+    }
+    .span2{
+        margin-top: 1vh;
+        margin-right: 0.4rem;
+        margin-left: 0.4rem;
+    }
 }
 
 @include media-breakpoint-down(lg) {
     .slide_home_individual {
         .slick-slide{
             .home__img{
-                max-height: 21.3vh;
-                min-height: 21.2vh;
+                max-height: 24vw;
+                min-height: 24vw;
             }
         } 
     }
@@ -133,8 +142,8 @@
     .slide_home_individual {
         .slick-slide{
             .home__img{
-                max-height: 25.1vh;
-                min-height: 25vh;
+                max-height: 25vw;
+                min-height: 25vw;
             }
         } 
     }
@@ -182,8 +191,8 @@
     .slide_home_individual {
         .slick-slide{
             .home__img{
-                max-height: 52.1vh;
-                min-height: 52vh;
+                max-height: 52.1vw;
+                min-height: 52vw;
             }
         } 
     }
@@ -192,7 +201,7 @@
 @include media-breakpoint-down(xs) {
     .slide_home_individual{
         .slick-slide .home__img {
-            min-height: 28.2vh;
+            min-height: 50vw;
             background-size: cover;
             background-repeat: no-repeat;
          }
@@ -212,6 +221,10 @@
   @media (min-width: 1000px) and (max-width: 1045px) { 
 
     @media (min-height: 1300px) and (max-height: 1400px) { 
+
+        .last{
+            padding-bottom: 15vh;
+        }
 
             .menu-open{
                 font-size: 3rem;
@@ -269,11 +282,39 @@
         .slide_home_individual {
             .slick-slide{
                 .home__img{
-                    max-height: 33.1vh;
-                    min-height: 33vh;
+                    max-height: 28vw;
+                    min-height: 28vw;
                 }
             } 
         }
         
     }
  }
+
+ @media (min-width: 700px) and (max-width: 800px) { 
+
+    @media (min-height: 700px) and (max-height: 800px) { 
+
+        .slide_home_individual {
+            .slick-slide{
+                .home__img{
+                    max-height: 30.1vw;
+                    min-height: 30vw;
+                }
+            } 
+        }
+
+        .span{
+            margin-top: 1vh;
+            margin-right: 0.4rem;
+            margin-left: 0.4rem;
+        }
+        .span2{
+            margin-top: 1vh;
+            margin-right: 0.4rem;
+            margin-left: 0.4rem;
+        }
+        
+    }
+ }
+

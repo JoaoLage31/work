@@ -8,8 +8,8 @@
                         <h1 class="footer-title">Our Lattest News</h1>
                     </div>
                     <div class="inputt">
-                        <input class="col-8 col-md-4 col-lg-8" type="text" placeholder="Input Email">
-                        <input class="col-4 col-md-2 col-lg-4" type="submit" value="Subscribe" label="submit">
+                        <input class="col-8 col-md-4 col-lg-7" type="text" placeholder="Input Email">
+                        <input class="col-4 col-md-2 col-lg-5" type="submit" value="Subscribe" label="submit">
                     </div>
                 </div>
             </div>

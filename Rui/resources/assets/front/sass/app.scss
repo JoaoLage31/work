@@ -1,0 +1,26 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Libraries
+@import '~slick-carousel/slick/slick.scss';
+@import '~@mdi/font/css/materialdesignicons.min.css';
+
+// Variables
+@import 'variables';
+
+//Typography
+@import 'typography';
+
+//Layout
+@import 'layout';
+
+//Global
+@import 'global';
+
+//Components
+ //@import 'components/buttons';
+ @import 'components/nav-bar';

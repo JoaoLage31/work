@@ -1,0 +1,36 @@
+.nav{
+
+    height: 120vh;
+
+    &__position{
+        position: relative;
+        padding-top: 4rem;
+
+        &__menu{
+            &__middle{
+                padding-top: 10vh;
+                padding-bottom: 30vh;
+            }
+
+            &__bottom{
+                align-items: center;
+                &__line{
+                    width: 100%;
+                    background-color: white;
+                    height: 1px;
+                }
+            }
+        }
+    }
+    &__banner{
+        position: absolute;
+        &__img{
+            width: 100vw;
+        }
+    }
+}
+
+body{
+    background-color: red($color:red);
+}
+

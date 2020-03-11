@@ -34,6 +34,7 @@ $('.slide_section').on('beforeChange', function(event, slick, currentSlide, next
     $(".slick-current").find('.check-2').removeClass("aside");
 });
 
+
 $('.slide_section').slick({
     centerMode:true,
     slidesToShow: 3,
@@ -43,19 +44,21 @@ $('.slide_section').slick({
     nextArrow:'<div><img  class="next2" src="{{URL::asset('front/media/icons/Layer.svg')}}" alt=""></div>',
     responsive: [
       {
-      centerMode: false,
+      
       breakpoint: 1180,
       settings: {
+        centerMode: false,
         slidesToShow:2,
-        slidesToScroll:1,
+        slidesToScroll:2,
       }
     },
     {
-      centerMode: false,
+      
       breakpoint: 1024,
       settings: {
+        centerMode: false,
         slidesToShow:2,
-        slidesToScroll:1,
+        slidesToScroll:2,
       }
     },
     {

@@ -1,0 +1,68 @@
+@mixin limite-text($line-height, $number-lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    //display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $number-lines;
+    line-height: $line-height;
+    min-height: $line-height * $number-lines;
+    max-height: $line-height * $number-lines;
+  }
+
+.big-title {
+  color: white;
+  font-family: $PlayFair;
+}
+
+.title {}
+
+.small-title {
+  color: white;
+  font-family: $OpenSans;
+}
+
+.big-text {}
+
+.small-text {}
+
+.menu__top{
+  color: white;
+  font-family: $PlayFair;
+  @include limite-text(1.2rem, 1);
+}
+
+.menu__curriculum{
+  color: white;
+  font-family: $PlayFair;
+  @include limite-text(1.2rem, 1);
+  font-size: 1rem;
+}
+
+.menu__top:hover{
+  color:white;
+  text-decoration: none;
+}
+
+
+@include media-breakpoint-only(xl) { 
+  .menu__top{
+    font-size: 1.2rem;
+  }
+  
+  .big-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    @include limite-text(4rem, 2);
+  }
+
+  .small-title {
+   font-size: 1.25rem;
+   font-weight: 300;
+   margin-top: 2rem;
+   width: 90%;
+   @include limite-text(2rem, 2);
+  }
+}
+
+
+

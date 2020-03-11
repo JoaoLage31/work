@@ -28,8 +28,6 @@
         @endif
     </div>
 
-    
-
     <div class="home__text_section__parameters__individual ">
         @if(!empty($field__3))
             <p class="local-place">
@@ -39,9 +37,6 @@
         <div class="span"></div>
         @endif
     </div>
-
-
-    
 
     <div class="home__text_section__parameters__individual ">
         @if(!empty($field__4))
@@ -56,27 +51,73 @@
 
 
 <div  class="home__text_section__parameters__extras d-flex flex-row bd-highlight mb-3">
-
-    @if(!empty($wifi))
-        <p class="title-parameters">
-            {{$wifi}}
-        </p>
-        <div class="span2"></div>
-    @endif
-
-    @if(!empty($otherspecs))
-        <p class="title-parameters">
-            {{$otherspecs}}
-        </p>
-        <div class="span2"></div>
-    @endif
     
-    @if(!empty($kitchenspecs))
-        <p class="title-parameters">
-            {{$kitchenspecs}}
-        </p>
+    @if(!empty($inidvidual_field_1))
+        @if($collection['id'] == '0')
+            <p class="title-parameters">
+                {{$inidvidual_field_1}}
+            </p>
+         @endif
+         @if($collection['id'] == '1')
+            <p class="title-parameters">
+               <b> {{$inidvidual_field_1}} </b>
+               Certificado
+            </p>
+         @endif
+         @if($collection['id'] == '2')
+         <p class="title-parameters">
+             {{$inidvidual_field_1}}
+         </p>
+      @endif
+        <div class="span2"></div>
     @endif
+
+
+
+    @if(!empty($inidvidual_field_2))
+    @if($collection['id'] == '0')
+        <p class="title-parameters">
+            {{$inidvidual_field_2}}
+        </p>
+     @endif
+     @if($collection['id'] == '1')
+        <p class="title-parameters">
+           <b> {{$inidvidual_field_2}} </b>
+           Área
+        </p>
+     @endif
+     @if($collection['id'] == '2')
+     <p class="title-parameters">
+         {{$inidvidual_field_2}}
+     </p>
+  @endif
+    <div class="span2"></div>
+@endif
+
+
+
+    
+    
+@if(!empty($inidvidual_field_3))
+@if($collection['id'] == '0')
+    <p class="title-parameters">
+        {{$inidvidual_field_3}}
+    </p>
+ @endif
+ @if($collection['id'] == '1')
+    <p class="title-parameters">
+       <b> {{$inidvidual_field_3}} </b>
+       Tipologia
+    </p>
+ @endif
+ @if($collection['id'] == '2')
+ <p class="title-parameters">
+     {{$inidvidual_field_3}}
+ </p>
+@endif
+@endif
 </div>
+
 
 <div  class="home__text_section__bottom">
                         

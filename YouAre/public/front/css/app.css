@@ -10832,10 +10832,10 @@ a.text-dark:focus {
   color: white;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 9;
   line-height: 2.4rem;
-  min-height: 18.3rem;
-  max-height: 18.3rem;
+  min-height: 23.1rem;
+  max-height: 23.1rem;
 }
 
 .small-title__variant {
@@ -12339,8 +12339,8 @@ footer {
 }
 
 .slide_home_individual .slick-slide .home__img {
-  max-height: 36.3vh;
-  min-height: 36.2vh;
+  max-height: 17vw;
+  min-height: 17vw;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12384,10 +12384,22 @@ footer {
   margin-left: 4px;
 }
 
+.span {
+  margin-top: 0.9vh;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.span2 {
+  margin-top: 1vh;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
 @media (max-width: 1199.98px) {
   .slide_home_individual .slick-slide .home__img {
-    max-height: 21.3vh;
-    min-height: 21.2vh;
+    max-height: 24vw;
+    min-height: 24vw;
   }
 
   .home__text_section__parameters {
@@ -12413,8 +12425,8 @@ footer {
 
 @media (max-width: 991.98px) {
   .slide_home_individual .slick-slide .home__img {
-    max-height: 25.1vh;
-    min-height: 25vh;
+    max-height: 25vw;
+    min-height: 25vw;
   }
 
   .home__text_section__parameters {
@@ -12460,14 +12472,14 @@ footer {
   }
 
   .slide_home_individual .slick-slide .home__img {
-    max-height: 52.1vh;
-    min-height: 52vh;
+    max-height: 52.1vw;
+    min-height: 52vw;
   }
 }
 
 @media (max-width: 575.98px) {
   .slide_home_individual .slick-slide .home__img {
-    min-height: 28.2vh;
+    min-height: 50vw;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -12486,6 +12498,10 @@ footer {
 }
 
 @media (min-width: 1000px) and (max-width: 1045px) and (min-height: 1300px) and (max-height: 1400px) {
+  .last {
+    padding-bottom: 15vh;
+  }
+
   .menu-open {
     font-size: 3rem;
     font-weight: 400;
@@ -12540,8 +12556,27 @@ footer {
 
 @media (min-width: 1000px) and (max-width: 1045px) and (min-height: 700px) and (max-height: 800px) {
   .slide_home_individual .slick-slide .home__img {
-    max-height: 33.1vh;
-    min-height: 33vh;
+    max-height: 28vw;
+    min-height: 28vw;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) and (min-height: 700px) and (max-height: 800px) {
+  .slide_home_individual .slick-slide .home__img {
+    max-height: 30.1vw;
+    min-height: 30vw;
+  }
+
+  .span {
+    margin-top: 1vh;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+  }
+
+  .span2 {
+    margin-top: 1vh;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
   }
 }
 
