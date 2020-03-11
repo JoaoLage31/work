@@ -1,0 +1,30 @@
+.section_2{
+    margin-top:50vh;
+    margin-bottom: 50vh;
+    
+    &__behind{
+        width: 71vw;
+        position: absolute;
+        height: 130%;
+        background-color: #F6F4F4;
+        z-index: -1;
+        /* right: 0; */
+        margin-top: -10vh;
+    }
+}
+
+
+.active{
+    color: $text !important;
+    font-weight: 700;
+}
+
+.btn{
+    color: $selectorOff;
+}
+
+.none{
+    visibility: hidden;
+    max-height: 0;
+    margin-bottom: 0 !important;
+}

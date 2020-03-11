@@ -15,8 +15,19 @@
 
 <body>
 
+    @php
+    $result = ['0'=>
+        [
+        'items'=>[[
+            'title'=>'Rui Pedro Gonçalves',
+            'description'=>'Imagination… its limits are only those of the mind itself.',
+            'images'=>['front/media/img/banner.jpg']
+    ]
+    ]]];
+    @endphp
+
     <!-- Begin: Header -->
-    @include('front.layout.nav-bar')
+    @include('front.layout.nav-bar',['data'=>$result])
     <!-- End: Header -->
     
     <!-- Begin: Content -->

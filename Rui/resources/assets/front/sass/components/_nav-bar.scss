@@ -1,6 +1,7 @@
 .nav{
-
     height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__position{
         position: relative;
@@ -20,12 +21,6 @@
                     height: 1px;
                 }
             }
-        }
-    }
-    &__banner{
-        position: absolute;
-        &__img{
-            width: 100vw;
         }
     }
 }

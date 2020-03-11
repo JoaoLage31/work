@@ -9,6 +9,7 @@
     max-height: $line-height * $number-lines;
   }
 
+// navBar
 .big-title {
   color: white;
   font-family: $PlayFair;
@@ -40,11 +41,55 @@
 
 .menu__top:hover{
   color:white;
-  text-decoration: none;
+}
+
+
+// section_1
+.section_1__title_text{
+  color: $text;
+  font-family: $PlayFair;
+  text-transform: uppercase;
+}
+
+.section_1__description_text{
+  font-family: $OpenSans;
+  color:$text ;
+}
+
+// section_2
+
+.section_2__title_buttons{
+  font-family: $PlayFair;
+  text-transform: uppercase;
+  color: $text;
+}
+
+.btn{
+  font-family: $PlayFair;
+  font-size: 1.5rem;
+  @include limite-text(3rem, 1);
+}
+
+.info_container__date{
+  font-family: $OpenSans;
+  color: $selectorOff;
+}
+
+.info_container__title{
+  font-family: $PlayFair;
+  color: $text;
+  font-weight: 700;
+}
+
+.info_container__description{
+  font-family: $OpenSans;
+  color: $text;
 }
 
 
 @include media-breakpoint-only(xl) { 
+
+    // navBar
   .menu__top{
     font-size: 1.2rem;
   }
@@ -61,6 +106,41 @@
    margin-top: 2rem;
    width: 90%;
    @include limite-text(2rem, 2);
+  }
+
+  // section_1
+  .section_1__title_text{
+    font-size: 3.125rem;
+    @include limite-text(3.5rem, 3);
+  }
+
+  .section_1__description_text{
+    font-style: 1rem;
+    @include limite-text(1.125rem, 7);
+  }
+
+  // section_2
+
+  .section_2__title_buttons{
+    font-size: 3rem;
+    @include limite-text(3rem, 2);
+    margin-bottom: 8vh;
+  }
+  
+  .info_container__date{
+    font-size: 0.85rem;
+    @include limite-text(1rem, 1);
+    margin-bottom: 2vh;
+  }
+  .info_container__title{
+    font-size: 1rem;
+    @include limite-text(1rem, 1);
+    margin-bottom: 2vh;
+  }
+  .info_container__description{
+    font-size: 0.85rem;
+    @include limite-text(1rem, 1);
+    margin-bottom: 3vh;
   }
 }
 

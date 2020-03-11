@@ -1,0 +1,22 @@
+.section-1{
+    margin-top: 12vh;
+    &__title{
+        margin-bottom: 8vh;
+    }
+
+    &__img{
+        height: 65vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__behind{
+        width: 35vw;
+        position: absolute;
+        height: 100vh;
+        background-color: #F6F4F4;
+        z-index: -1;
+        right: 0;
+        margin-top: 30vh;
+    }
+}
