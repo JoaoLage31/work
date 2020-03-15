@@ -167,39 +167,74 @@
 @php
     $result = ['0'=>
         [
+        'title'=>'events And news',
         'items'=>[[
-            'title'=>'Stay with us',
+            'title'=>'lalalallalaa',
             'date'=>'25/10/11',
-            'images'=>['front/media/img/slider.jpg']
+            'images'=>['front/media/img/slider.jpg'],
+            'add_info'=>'See More',
+            'full_title'=>'Best Events to Go in Porto in January 2020',
+            'text_body'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
     ],[
             'title'=>'Stay with us',
             'date'=>'25/10/11',
-            'images'=>['front/media/img/slider.jpg']
+            'images'=>['front/media/img/slider2.jpg'],
+            'add_info'=>'See More',
+            'full_title'=>'Best Events to Go in Porto in January 2020',
+            'text_body'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
+    ],
+    [
+            'title'=>'SGOOOOOOOOOO',
+            'date'=>'25/10/11',
+            'images'=>['front/media/img/slider3.jpg'],
+            'add_info'=>'See More',
+            'full_title'=>'Best Events to Go in Porto in January 2020',
+            'text_body'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
     ],
     [
             'title'=>'Stay with us',
             'date'=>'25/10/11',
-            'images'=>['front/media/img/slider.jpg']
+            'images'=>['front/media/img/slider4.jpg'],
+            'add_info'=>'See More',
+            'full_title'=>'Best Events to Go in Porto in January 2020',
+            'text_body'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
     ],
     [
             'title'=>'Stay with us',
             'date'=>'25/10/11',
-            'images'=>['front/media/img/slider.jpg']
+            'images'=>['front/media/img/slider2.jpg'],
+            'add_info'=>'See More',
+            'full_title'=>'Best Events to Go in Porto in January 2020',
+            'text_body'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
     ],
     [
-            'title'=>'Stay with us',
+            'title'=>'Is this one?',
             'date'=>'25/10/11',
-            'images'=>['front/media/img/slider.jpg']
-    ],
-    [
-            'title'=>'Stay with us',
-            'date'=>'25/10/11',
-            'images'=>['front/media/img/slider.jpg']
+            'images'=>['front/media/img/slider.jpg'],
+            'add_info'=>'See More',
+            'full_title'=>'Best Events to Go in Porto in January 2020',
+            'text_body'=> 'Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.',
     ],
 ]]];
 @endphp
 
 @include('front.pages.home.partials.section_3',['data'=>$result])
+
+
+
+@php
+    $result = ['0'=>
+        [
+        'title'=>'YOU would like to contact me?',
+        'items'=>[[
+            'phone'=>'( +351 ) 962 107 023',
+            'street'=>'Rua Conde D. Pedro 179 Rch/dto 4400-091 Vila Nova de Gaia',
+            'images'=>['front/media/img/slider.jpg'],
+    ],
+]]];
+@endphp
+
+@include('front.pages.home.partials.section_4',['data'=>$result])
 
 @endsection
 

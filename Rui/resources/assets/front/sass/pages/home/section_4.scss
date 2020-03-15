@@ -1,0 +1,62 @@
+.section_4{
+    margin-top: 50vh;
+    &__behind{
+        width: 71vw;
+        position: absolute;
+        height: 80vh;
+        background-color: #F6F4F4;
+        z-index: -1;
+        margin-top: 35vh;
+    }
+    &__input{
+        border: none;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1rem;
+        border-bottom-color: $text;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        background-color: transparent;
+
+        &:focus{
+            outline-width: 0;
+        }
+    }
+
+    &__submit{
+        border: none;
+        background-color: transparent;
+
+        &:focus{
+            outline-width: 0;
+        }
+    }
+
+    &__trace{
+        height: 1px;
+        background-color: $text;
+    }
+    
+    &__title_posisiton{
+        margin-bottom: 8vh;
+    }
+    
+    &__info{
+        width: 60%;
+    }
+    &__info_phone{
+        margin-bottom: 5vh;
+    }
+    &__info_street{
+        margin-bottom: 3vh;
+    }
+}
+
+.mdi{
+    font-size: 1.125rem;
+    margin-right: 0.5rem;
+    color: $text;
+}
+
+.mdi:hover{
+    color: $text;
+}

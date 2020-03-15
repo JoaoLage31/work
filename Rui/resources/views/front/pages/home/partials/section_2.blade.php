@@ -18,7 +18,7 @@
     <div class="col-xl-4">
         <h2 class="section_2__title_buttons">curriculum vitae</h2>
         @foreach($data as $key=>$collection)
-        <button id="{{$key == 0 ? '' : 'none'}}"  class="btn {{$key == 0 ? 'active' : ''}}   slector-slick" data-target="#button{{$key}}"> {{$collection['name']}}</button>
+        <button id="{{$key == 0 ? '' : 'none'}}"  class="btn {{$key == 0 ? 'active' : ''}}   slector-filter" data-target="#button{{$key}}"> {{$collection['name']}}</button>
         <br>
         @endforeach
     </div>
@@ -29,7 +29,6 @@
 @push('scripts')
 <script>
 function filterSelection(el) {
-
       $('.btn').removeClass('active');    
       $('.info_container').addClass('none');
       var idContainer = $(el).attr("data-target");
@@ -37,7 +36,7 @@ function filterSelection(el) {
       $(idContainer).removeClass('none');
 }
 
-     $('.slector-slick').on('click', function(){
+     $('.slector-filter').on('click', function(){
       filterSelection(this);
      })
 </script>
