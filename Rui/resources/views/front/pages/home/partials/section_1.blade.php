@@ -9,13 +9,24 @@
                             'description_2'=>$item['description_2'],
                             'description_3'=>$item['description_3'],
                                 ])
-                        <div class="col-xl-5 section-1__img" style="background-image: url({{($img)}});">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="col-xl-5 section-1__img" style="background-image: url({{($img)}});">
                         </div>
                         <!--AQUI EM BAIXO-->
                     </div>
                 </div>
-                <div class="section-1__behind"></div>
+                <div data-aos="fade-right" data-aos-duration="1500" class="section-1__behind"></div>
             </div>
         @endforeach
     @endforeach
 @endforeach
+<div data-aos="fade-right" data-aos-duration="1500" class="partilhar2 d-flex align-items-center">
+    <div class="line2"></div>
+    <div class="partilhar__buttons d-flex">
+      <p>Get In Touch</p>
+    </div>
+  </div>
+
+
+  <script>
+    AOS.init();
+  </script>

@@ -10763,9 +10763,9 @@ a.text-dark:focus {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
-  line-height: 1.2rem;
-  min-height: 1.2rem;
-  max-height: 1.2rem;
+  line-height: 1.6rem;
+  min-height: 1.6rem;
+  max-height: 1.6rem;
 }
 
 .menu__curriculum {
@@ -10854,8 +10854,13 @@ a.text-dark:focus {
   color: #424441;
 }
 
-.slider_01__bottom__pop_up_text {
+.slider_01__bottom__pop_up_text_p1 {
   font-family: "Open Sans", sans-serif;
+  color: #424441;
+}
+
+.slider_01__bottom__pop_up_text_p2 {
+  font-family: "Playfair Display", serif;
   color: #424441;
 }
 
@@ -10904,6 +10909,14 @@ a.text-dark:focus {
 @media (min-width: 1200px) {
   .menu__top {
     font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+
+  .menu__top:after {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    color: white;
+    mix-blend-mode: difference;
   }
 
   .big-title {
@@ -11002,16 +11015,17 @@ a.text-dark:focus {
     line-height: 1rem;
     min-height: 1rem;
     max-height: 1rem;
+    padding-bottom: 5vh;
   }
 
   .slider_01__bottom__title {
     font-size: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     line-height: 2rem;
-    min-height: 2rem;
-    max-height: 2rem;
+    min-height: 4rem;
+    max-height: 4rem;
   }
 
   .slider_01__bottom__add_info_text {
@@ -11044,8 +11058,24 @@ a.text-dark:focus {
     max-height: 5.6rem;
   }
 
-  .slider_01__bottom__pop_up_text {
+  .pop_up .slider_01__bottom__title {
+    font-size: 2.4rem !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-height: 3rem;
+    min-height: 6rem;
+    max-height: 6rem;
+  }
+
+  .slider_01__bottom__pop_up_text_p1 {
     font-size: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .slider_01__bottom__pop_up_text_p2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .section_4__title_buttons {
@@ -11118,6 +11148,12 @@ body {
   padding-bottom: 30vh;
 }
 
+.nav__position__menu__top {
+  position: fixed;
+  z-index: 100;
+  height: 100px;
+}
+
 .nav__position__menu__bottom {
   align-items: center;
 }
@@ -11130,6 +11166,15 @@ body {
 
 body {
   background-color: 255;
+}
+
+.mdi-nav {
+  color: white !important;
+}
+
+.nav.scrolled .menu__top {
+  color: black !important;
+  transition: background-color 200ms linear;
 }
 
 .section-1 {
@@ -11156,19 +11201,38 @@ body {
   margin-top: 30vh;
 }
 
+.line2 {
+  width: 100vw;
+  margin-left: -92vw;
+  height: 1px;
+  background-color: #424441;
+}
+
+.partilhar2 {
+  margin-top: 22vh;
+}
+
 .section_2 {
   margin-top: 50vh;
-  margin-bottom: 50vh;
+  margin-bottom: 80vh;
 }
 
 .section_2__behind {
+  width: 71vw;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  /* right: 0; */
+  margin-top: -10vh;
+}
+
+.section_2__behind_1 {
   width: 71vw;
   position: absolute;
   height: 130%;
   background-color: #F6F4F4;
   z-index: -1;
   /* right: 0; */
-  margin-top: -10vh;
 }
 
 .active {
@@ -11186,6 +11250,21 @@ body {
   margin-bottom: 0 !important;
 }
 
+.partilhar3 {
+  width: 71vw;
+  position: absolute;
+  height: 320%;
+  z-index: -1;
+  margin-left: 80vw;
+}
+
+.line3 {
+  width: 100vw;
+  margin-right: -92vw;
+  height: 1px;
+  background-color: #424441;
+}
+
 .slick-slide {
   margin-left: 25px !important;
   margin-right: 25px !important;
@@ -11201,8 +11280,8 @@ body {
 .modal-body .img {
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 24vw;
-  min-height: 24vw;
+  max-height: 26vw;
+  min-height: 26vw;
 }
 
 .slider_01__bottom {
@@ -11229,6 +11308,11 @@ body {
 
 .slider_01__arrows .next:hover {
   cursor: pointer;
+}
+
+.slider_01__bottom__add_info {
+  background-color: transparent;
+  border: none;
 }
 
 .section_3 {
@@ -11258,19 +11342,46 @@ body {
 .modal-dialog {
   height: 100vh;
   width: 100vw;
-}
-
-.modal-dialog {
   max-width: 100vw;
   margin: 1.75rem auto;
 }
 
 .modal-content {
   padding: 5rem;
+  flex-direction: unset;
 }
 
 .modal-body {
-  padding: 3rem;
+  padding: 0rem;
+}
+
+.modal-header {
+  display: block !important;
+  border-bottom: none !important;
+  padding: 0rem;
+}
+
+.close {
+  margin-top: 6vh;
+}
+
+.partilhar {
+  margin-top: 5vh;
+}
+
+.partilhar__buttons {
+  margin-left: 5vh;
+}
+
+.partilhar__buttons__icons {
+  margin-left: 1vw;
+}
+
+.line {
+  width: 100vw;
+  margin-left: -102vw;
+  height: 1px;
+  background-color: #424441;
 }
 
 .section_4 {

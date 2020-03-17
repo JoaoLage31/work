@@ -1,8 +1,8 @@
 <div>
-    <div class="section_3__behind"></div>
+    <div data-aos="fade-right"  data-aos-duration="1000" class="section_3__behind"></div>
     <div class="section_3">
         @foreach($data as $key=>$collection)
-            <div class="section_3__title_posisiton col-xl-3"> <h2 class="section_3__title_buttons"> {{$collection['title']}} </h2></div>
+            <div data-aos="fade-left"  data-aos-duration="2000" class="section_3__title_posisiton col-xl-3"> <h2 class="section_3__title_buttons"> {{$collection['title']}} </h2></div>
         @endforeach
         
         <div class="slider_01__arrows d-flex justify-content-end">
@@ -39,31 +39,63 @@
 
 @foreach($data as $key=>$collection)
   @foreach($collection['items'] as $item)
-    <div class="modal fade" id="find" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal fade" id="find" tabindex="-1"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            
+          <div class="col-xl-1">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <img src="{{URL::asset('front/media/svgs/setaesquerda.svg')}}" alt="">
             </button>
           </div>
-          <div class="modal-body">
-            <div class="col-xl-5">
-              @include('front.components.sections_components.section_3-components',[
-                'full_title'=>$item['full_title'],
-                ])
-            </div>
-            <div class="d-flex">
+          <div class="col-xl-11">
+            <div class="modal-header">
               <div class="col-xl-5">
-                  @foreach($item["images"] as $img)
-                    <div class="img" style="background-image: url({{($img)}}); "></div>
-                  @endforeach
-              </div>
-              <div class="col-xl-4">
+                <div class="pop_up">
                 @include('front.components.sections_components.section_3-components',[
-                  'text_body'=>$item['text_body'],
+                  'title'=>$item['title'],
+                  'date'=>$item['date'],
+                  'by'=>$item['by'],
                   ])
+              </div>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex">
+                <div class="col-xl-6">
+                    @foreach($item["images"] as $img)
+                      <div class="img" style="background-image: url({{($img)}}); "></div>
+                    @endforeach
+                    <div class="partilhar d-flex align-items-center">
+                      <div class="line"></div>
+                      <div class="partilhar__buttons d-flex">
+                        <p>Partilhar Noticia</p>
+                        <div class="d-flex partilhar__buttons__icons">
+                          <div>
+                              <a href="#" class="mdi mdi-facebook"></a>
+                          </div>
+                          <div>
+                              <a href="#" class="mdi mdi-twitter"></a>
+                          </div>
+                          <div>
+                              <a href="#" class="mdi mdi-linkedin"></a>
+                          </div>
+                          <div>
+                              <a href="#" class="mdi mdi-instagram"></a>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 d-flex justify-content-around">
+                  <div class="col-xl-10">
+                      @include('front.components.sections_components.section_3-components',[
+                      'paragraph_1'=>$item['paragraph_1'],
+                      'paragraph_2'=>$item['paragraph_2'],
+                      'paragraph_3'=>$item['paragraph_3'],
+                      ])
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -29,7 +29,7 @@
 .menu__top{
   color: white;
   font-family: $PlayFair;
-  @include limite-text(1.2rem, 1);
+  @include limite-text(1.6rem, 1);
 }
 
 .menu__curriculum{
@@ -116,11 +116,15 @@
   color: $text;
 }
 
-.slider_01__bottom__pop_up_text{
+.slider_01__bottom__pop_up_text_p1{
   font-family: $OpenSans;
   color: $text;
 }
 
+.slider_01__bottom__pop_up_text_p2{
+  font-family: $PlayFair;
+  color: $text;
+}
 //section_4
 
 .section_4__input{
@@ -159,6 +163,14 @@
     // navBar
   .menu__top{
     font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+
+  .menu__top:after{
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    color: rgb(255, 255, 255); 
+    mix-blend-mode: difference;
   }
   
   .big-title {
@@ -215,11 +227,12 @@
   .slider_01__bottom__date{
     font-size: 1rem;
     @include limite-text(1rem, 1);
+    padding-bottom: 5vh;
   }
 
   .slider_01__bottom__title{
     font-size: 1.5rem;
-    @include limite-text(2rem, 1);
+    @include limite-text(2rem, 2);
   }
 
   .slider_01__bottom__add_info_text{
@@ -239,8 +252,21 @@
     @include limite-text(2.8rem, 2);
   }
 
-  .slider_01__bottom__pop_up_text{
+  .pop_up{
+    .slider_01__bottom__title{
+      font-size: 2.4rem !important;
+      @include limite-text(3rem, 2);
+    }
+  }
+
+  .slider_01__bottom__pop_up_text_p1{
     font-size: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .slider_01__bottom__pop_up_text_p2{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   // section_4
