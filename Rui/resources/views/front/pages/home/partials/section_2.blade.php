@@ -6,7 +6,7 @@
         <br>
         @endforeach
     </div>
-    <div data-aos="fade-left"  data-aos-duration="2000" class="section_2__behind">
+    <div data-aos="fade-right"  data-aos-duration="2000" class="section_2__behind">
         <div class="section_2__behind_1"></div>
         <div data-aos="fade-left"  data-aos-duration="2000" class="partilhar3 d-flex align-items-center">
             <div class="partilhar__buttons d-flex">

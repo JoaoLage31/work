@@ -1,8 +1,8 @@
 <div>
-    <div data-aos="fade-right"  data-aos-duration="1000" class="section_3__behind"></div>
+    <div data-aos="fade-left"  data-aos-duration="1000" class="section_3__behind"></div>
     <div class="section_3">
         @foreach($data as $key=>$collection)
-            <div data-aos="fade-left"  data-aos-duration="2000" class="section_3__title_posisiton col-xl-3"> <h2 class="section_3__title_buttons"> {{$collection['title']}} </h2></div>
+            <div data-aos="fade-right"  data-aos-duration="2000" class="section_3__title_posisiton col-xl-3"> <h2 class="section_3__title_buttons"> {{$collection['title']}} </h2></div>
         @endforeach
         
         <div class="slider_01__arrows d-flex justify-content-end">
@@ -24,8 +24,8 @@
                                     'date'=>$item['date'],
                                     ])
                                 </div>
-                                <button type="button"  data-toggle="modal" data-target="#exampleModal2" class="col-md-6 slider_01__bottom__add_info d-flex align-items-center">
-                                    <div class="slider_01__bottom__add_info__line col-md-5 col-xl-2"></div>
+                                <button type="button"  data-toggle="modal" data-target="#exampleModal2" class="slider_01__bottom__add_info d-flex align-items-center">
+                                    <div class="slider_01__bottom__add_info__line col-4"></div>
                                     @include('front.components.sections_components.section_3-components',[
                                         'add_info'=>$item['add_info'],
                                         ])

@@ -9,6 +9,19 @@
     max-height: $line-height * $number-lines;
   }
 
+.partilhar__buttons {
+  font-size: 1rem;
+  color: $text;
+  margin-right: 5vh;
+}
+
+.partilhar__buttons a{
+  font-size: 1rem;
+  color: $text;
+  text-decoration: none;
+}
+
+
 // navBar
 .big-title {
   color: white;
@@ -101,6 +114,7 @@
 .slider_01__bottom__add_info_text{
   font-family: $OpenSans;
   color: $text;
+  margin-top: 1rem !important;
 }
 
 .section_3__title_buttons{
@@ -194,7 +208,7 @@
   }
 
   .section_1__description_text{
-    font-style: 1rem;
+    font-size: 1rem;
     @include limite-text(1.125rem, 7);
   }
 
@@ -227,7 +241,7 @@
   .slider_01__bottom__date{
     font-size: 1rem;
     @include limite-text(1rem, 1);
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
   }
 
   .slider_01__bottom__title{
@@ -261,7 +275,6 @@
 
   .slider_01__bottom__pop_up_text_p1{
     font-size: 1rem;
-    padding-bottom: 3rem;
   }
 
   .slider_01__bottom__pop_up_text_p2{
@@ -306,7 +319,7 @@
 
 
   .section_1__description_text{
-    font-style: 1rem;
+    font-size: 1rem;
     @include limite-text(1.125rem, 7);
     margin-bottom: 1rem;
   }
@@ -351,7 +364,7 @@
 
 @include media-breakpoint-down(md) { 
   .section_1__description_text{
-    font-style: 1rem;
+    font-size: 1rem;
     @include limite-text(1.125rem, 8);
     margin-bottom: 1vh;
   }
@@ -411,7 +424,7 @@
    }
 
    .section_1__description_text{
-    font-style: 1rem;
+    font-size: 1rem;
     @include limite-text(1.125rem, 7);
   }
 
@@ -424,5 +437,15 @@
     font-size: 1rem ;
     @include limite-text(1.5rem, 1);
     margin-bottom: 1vh;
+  }
+
+  .slider_01__bottom__pop_up_text_p1{
+    margin-bottom: 2vh;
+    font-size: 1rem;
+  }
+  .slider_01__bottom__pop_up_text_p2{
+    margin-bottom: 2vh;
+    font-family: $PlayFair;
+    font-size: 1.2rem;
   }
 }

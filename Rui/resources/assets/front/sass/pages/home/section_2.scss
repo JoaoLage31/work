@@ -4,12 +4,13 @@
     display: flex;
     
     &__behind{
-        width: 71vw;
+        width: 80vw;
         position: absolute;
         height: 100%;
         z-index: -1;
         /* right: 0; */
         margin-top: -10vh;
+        margin-left: -2vh;
     }
 
     &__behind_1{
@@ -56,35 +57,19 @@
     background-color: $text;
     
 }
-
-@include media-breakpoint-down(xs) { 
-
+@include media-breakpoint-down(lg) { 
     .section_2{
-        margin-top:15vh;
-        margin-bottom: 20vh;
-        display: block;
-
-        &__behind{
-            display: none;
-        }
-    
-        &__behind_1{
-            display: none;
-        }
+        margin-bottom: 65vh;
     }
-    .mobile-on{
-        display: block;
-        margin-bottom: 5vh;
+        
     }
 
-    .mobile-off{
-        display: none;
-    }
-}
+
+
 
 @include media-breakpoint-down(md) { 
 .section_2{
-    margin-bottom: 40vh;
+    margin-bottom: 60vh;
 }
 
     .invisible{
@@ -99,4 +84,35 @@
         margin-left: 55vw;
 }
     
+}
+
+
+
+@include media-breakpoint-down(sm) { 
+
+    .section_2{
+        margin-top:15vh;
+        margin-bottom: 20vh;
+        display: block;
+
+        &__behind{
+            height: 60%;
+        }
+    
+        &__behind_1{
+            display: none;
+        }
+    }
+
+    .partilhar3{
+        margin-left: 20vw !important;
+}
+    .mobile-on{
+        display: block;
+        margin-bottom: 5vh;
+    }
+
+    .mobile-off{
+        display: none;
+    }
 }

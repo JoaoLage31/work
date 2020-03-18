@@ -37,8 +37,8 @@
             <input  class="section_4__input col-xl-11" type="text" placeholder="SUBJECT*">
             <input   class="section_4__input col-xl-11" type="text" placeholder="MESSAGE*">
             <div class="d-flex align-items-center justify-content-end">
-                <div class="section_4__trace col-xl-1"></div>
-                <input class="section_4__submit col-xl-3" type="submit" value="Submit">
+                <div class="section_4__trace col-1 col-md-1 col-lg-1 col-xl-1"></div>
+                <input class="section_4__submit col-3 col-md-3 col-lg-3 col-xl-3" type="submit" value="Submit">
             </div>
             
         </div>

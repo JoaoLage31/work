@@ -12,7 +12,7 @@
   
 
 @if(!empty($add_info))
-<p class="slider_01__bottom__add_info_text col-md-7">
+<p class="slider_01__bottom__add_info_text col-12">
     {{$add_info}}
 </p>
 @endif

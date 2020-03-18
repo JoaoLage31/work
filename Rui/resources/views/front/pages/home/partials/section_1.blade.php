@@ -14,7 +14,7 @@
                         <!--AQUI EM BAIXO-->
                     </div>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1500" class="section-1__behind"></div>
+                <div data-aos="fade-left" data-aos-duration="1500" class="section-1__behind"></div>
             </div>
         @endforeach
     @endforeach
@@ -22,11 +22,19 @@
 <div data-aos="fade-right" data-aos-duration="1500" class="partilhar2 d-flex align-items-center">
     <div class="line2"></div>
     <div class="partilhar__buttons d-flex">
-      <p>Get In Touch</p>
+        <a  href="">Get In Touch</a>
     </div>
   </div>
 
+  @push('scripts')
 
   <script>
-    AOS.init();
+    $(document).ready(function() { 
+        // filterSelection("Rent");
+        AOS.init({})
+     });
+
   </script>
+
+
+@endpush

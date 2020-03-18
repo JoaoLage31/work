@@ -1,6 +1,10 @@
-.container{
+.box{
     display: flex;
     justify-content: space-between;
+}
+
+.section_4__submit{
+    margin-left: 1rem;
 }
 
 .section-1{
@@ -38,8 +42,8 @@
 }
 
 
-@include media-breakpoint-down(xs) { 
-    .container{
+@include media-breakpoint-down(sm) { 
+    .box{
         display: block;
     }
 

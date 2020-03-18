@@ -72,6 +72,20 @@
 .contact_me_on{
     display: none !important;
 }
+@include media-breakpoint-down(md) { 
+    .section_4_flex{
+        justify-content: space-between !important;
+    }
+
+    .section_4__title_posisiton{
+        margin-bottom: 3vh;
+    }
+
+    .section_4__info_phone{
+        margin-bottom: 2vh;
+    }
+}
+
 
 @include media-breakpoint-down(xs) { 
 
@@ -97,16 +111,3 @@
     }
 }
 
-@include media-breakpoint-down(md) { 
-    .section_4_flex{
-        justify-content: space-between !important;
-    }
-
-    .section_4__title_posisiton{
-        margin-bottom: 3vh;
-    }
-
-    .section_4__info_phone{
-        margin-bottom: 2vh;
-    }
-}

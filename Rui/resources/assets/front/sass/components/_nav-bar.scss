@@ -1,5 +1,7 @@
 .nav{
     height: 120vh;
+    max-height: 120vh;
+    min-height: 119vh;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -48,7 +50,7 @@
     transition: background-color 200ms linear;
   }
 
-  @include media-breakpoint-down(xs) { 
+  @include media-breakpoint-down(sm) { 
     .nav{
 
         height: 105vh;
@@ -86,6 +88,10 @@
        .nav{
            &__position{
                justify-content: center;
+               &__top{
+                display: flex;
+                justify-content: space-around;
+            }
            }
        }
    }
@@ -95,6 +101,10 @@
         &__position{
             &__menu{
                 justify-content: flex-end;
+                &__top{
+                    display: flex;
+                    justify-content: space-around;
+                }
             }
         }
     }
