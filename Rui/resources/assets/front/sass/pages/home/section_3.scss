@@ -117,9 +117,152 @@
     }
 }
 
+c
+
 .line{
     width:100vw;
     margin-left: -102vw;
     height: 1px;
     background-color: $text;
+}
+
+@include media-breakpoint-down(xs) { 
+    
+    .pop_up_flex{
+        display: block;
+    }
+
+    .section_3{
+        margin-left: 0vw;
+
+        &__behind{
+        display: none;
+    }
+        &__title_position{
+            margin-left: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+    .slick-slide{
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+        .img{
+            max-height: 25vh;
+            min-height: 25vh;
+        }
+    }
+    .section_3__title_posisiton {
+         margin-left: 0vw; 
+         margin-bottom: 0rem; 
+    }
+
+    .modal-content {
+        padding: 0rem;
+        display: block;
+    }
+
+    .modal-body{
+        .img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 26vh;
+            min-height: 26vh;
+        }
+    }
+    .pop_up_close{
+        overflow: auto;
+    }
+
+    .slider_01__bottom__add_info__line{
+        display: none;
+    }
+
+    .slider_01__bottom__add_info{
+        margin-top: 1rem;
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    .slick-slide{
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    
+        .img{
+            max-height: 35vw;
+            min-height: 35vw;
+        }
+    }
+
+    .pop_up_flex{
+        display: block;
+    }
+
+    .section_3{
+
+        &__behind{
+            height: 90vh;
+    }
+        &__title_position{
+            margin-left: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+    .slick-slide{
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+        .img{
+            max-height: 25vh;
+            min-height: 25vh;
+        }
+    }
+    .section_3__title_posisiton {
+         margin-left: 0vw; 
+         margin-bottom: 0rem; 
+    }
+
+    .modal-content {
+        padding: 0rem;
+        display: block;
+    }
+
+    .modal-body{
+        .img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 40vh;
+            min-height: 40vh;
+        }
+    }
+    .pop_up_close{
+        overflow: auto;
+    }
+
+    
+}
+
+@include media-breakpoint-down(lg) {
+    .slick-slide{
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    
+        .img{
+            max-height: 22vw;
+            min-height: 22vw;
+        }
+    }
+
+    .modal-body{
+        .img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 33vh;
+            min-height: 33vh;
+        }
+    }
+
+    .pop_up_flex{
+        display: flex;
+        justify-content:unset;
+    }
 }

@@ -1,14 +1,16 @@
-<div  class="section-1__title col-xl-7">
-    @if(!empty($title))
-        <h2 data-aos="fade-right" data-aos-duration="1000" class="section_1__title_text">
+<div  class="section-1__title col-md-5  col-xl-7 col-12">
+    <div class="col-12">
+        @if(!empty($title))
+        <h2 data-aos="fade-right" data-aos-duration="1000" class="section_1__title_text col-12">
             {{$title}}
         </h2>
     @endif
+    </div>
 </div>
 
 <!-- DIV ABAIXO É FECHADA NO section_1-->
-<div class="d-flex justify-content-between">
-    <div class="section-1__description col-xl-4">
+<div class="container">
+    <div class="section-1__description col-md-5  col-xl-4 col-12">
         @if(!empty($description_1))
             <p data-aos="fade-right" data-aos-duration="1000" class="section_1__description_text">
                 {{$description_1}}

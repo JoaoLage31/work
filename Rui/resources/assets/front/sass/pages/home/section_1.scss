@@ -1,3 +1,8 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .section-1{
     margin-top: 12vh;
     &__title{
@@ -30,4 +35,62 @@
 
 .partilhar2{
     margin-top: 22vh;
+}
+
+
+@include media-breakpoint-down(xs) { 
+    .container{
+        display: block;
+    }
+
+    .section-1{
+        &__img{
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 5vh;
+        }
+    }
+
+    .section-1__behind {
+        display: none;
+    }
+
+    .partilhar2{
+        margin-top: 10vh;
+    }
+    .line2 {
+        margin-left: -75vw;
+    }
+    
+}
+
+
+@include media-breakpoint-down(md) { 
+    .section-1{
+    
+        &__img{
+            height: 45vh;
+        }
+
+        &__behind {
+            width: 45vw;
+            height: 58vh;
+            margin-top: 27vh;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) { 
+    .section-1{
+
+        &__behind {
+            width: 42vw;
+            height: 100vh;
+            margin-top: 20vh;
+        }
+    }
+    .partilhar2{
+        margin-top: 12vh;
+    }
 }

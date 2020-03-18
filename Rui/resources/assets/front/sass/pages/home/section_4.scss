@@ -1,5 +1,8 @@
 .section_4{
     margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+
     &__behind{
         width: 71vw;
         position: absolute;
@@ -20,6 +23,11 @@
         &:focus{
             outline-width: 0;
         }
+    }
+
+    .section_4_flex{
+        display: flex;
+        justify-content:center ;
     }
 
     &__submit{
@@ -59,4 +67,46 @@
 
 .mdi:hover{
     color: $text;
+}
+
+.contact_me_on{
+    display: none !important;
+}
+
+@include media-breakpoint-down(xs) { 
+
+    .section_4{
+        display: block;
+        margin-bottom: 15vh;
+        margin-top: 20vh;
+        &__behind{
+            display: none;
+        }
+    }    
+    .section_4_flex{
+        display: block !important;
+    }
+
+    .contact_me_on{
+        display: block !important;
+        margin-bottom: 5vh;
+    }
+
+    .contact_me_off{
+        display: none !important;
+    }
+}
+
+@include media-breakpoint-down(md) { 
+    .section_4_flex{
+        justify-content: space-between !important;
+    }
+
+    .section_4__title_posisiton{
+        margin-bottom: 3vh;
+    }
+
+    .section_4__info_phone{
+        margin-bottom: 2vh;
+    }
 }

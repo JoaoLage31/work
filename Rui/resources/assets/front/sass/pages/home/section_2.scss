@@ -1,6 +1,7 @@
 .section_2{
     margin-top:50vh;
     margin-bottom: 80vh;
+    display: flex;
     
     &__behind{
         width: 71vw;
@@ -21,7 +22,9 @@
     }
 }
 
-
+.mobile-on{
+    display: none;
+}
 .active{
     color: $text !important;
     font-weight: 700;
@@ -51,5 +54,49 @@
     height: 1px;
 
     background-color: $text;
+    
+}
+
+@include media-breakpoint-down(xs) { 
+
+    .section_2{
+        margin-top:15vh;
+        margin-bottom: 20vh;
+        display: block;
+
+        &__behind{
+            display: none;
+        }
+    
+        &__behind_1{
+            display: none;
+        }
+    }
+    .mobile-on{
+        display: block;
+        margin-bottom: 5vh;
+    }
+
+    .mobile-off{
+        display: none;
+    }
+}
+
+@include media-breakpoint-down(md) { 
+.section_2{
+    margin-bottom: 40vh;
+}
+
+    .invisible{
+        display: none;
+    }
+    
+    .partilhar3{
+        width: 71vw;
+        position: absolute;
+        height: 300%;
+        z-index: -1;
+        margin-left: 55vw;
+}
     
 }

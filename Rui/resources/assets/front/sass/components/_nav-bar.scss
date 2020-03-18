@@ -6,8 +6,14 @@
     &__position{
         position: relative;
         padding-top: 4rem;
+        display: flex;
+        justify-content: flex-end;
 
         &__menu{
+
+            display: flex;
+            justify-content: space-between;
+
             &__middle{
                 padding-top: 10vh;
                 padding-bottom: 30vh;
@@ -16,7 +22,6 @@
             &__top{
                 position: fixed;
                 z-index: 100;
-                height: 100px;
             }
 
             &__bottom{
@@ -31,9 +36,6 @@
     }
 }
 
-body{
-    background-color: red($color:red);
-}
 
 
 .mdi-nav{
@@ -46,4 +48,56 @@ body{
     transition: background-color 200ms linear;
   }
 
-  @include media-breakpoint-down(xs) {  }
+  @include media-breakpoint-down(xs) { 
+    .nav{
+
+        height: 105vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__position{
+            &__menu{
+                display:block;
+                &__top{
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+    .mdi__position{
+        display: flex;
+        justify-content: center;
+        margin-top: 15vh;
+    }
+    .nav.scrolled .nav__position{
+        padding-top: 2rem;
+    }
+
+    .nav.scrolled .menu__top {
+        color: black !important;
+        transition: background-color 200ms linear;
+      }
+
+   }
+
+   @include media-breakpoint-down(md) { 
+       .nav{
+           &__position{
+               justify-content: center;
+           }
+       }
+   }
+
+   @include media-breakpoint-down(lg) { 
+    .nav{
+        &__position{
+            &__menu{
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+   
+   

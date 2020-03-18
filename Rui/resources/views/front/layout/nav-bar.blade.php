@@ -2,15 +2,15 @@
     @foreach($collection['items'] as $item)
         @foreach($item["images"] as $img)
             <nav class="nav" style="background-image: url({{($img)}}); ">
-                <div class="col-xl-12 d-flex justify-content-end nav__position">
-                    <div class="col-xl-5 nav__position__menu d-flex justify-content-between">
-                        <div class="col-xl-9">
-                            <div class="nav__position__menu__top d-flex justify-content-between">
+                <div class="col-xl-12  nav__position">
+                    <div class="col-xl-5 nav__position__menu">
+                        <div class="col-12 col-md-10 col-lg-6 col-xl-9">
+                            <div class="nav__position__menu__top d-flex justify-content-between col-10 col-md-6 col-lg-4 col-xl-4">
                                 <a data-aos="fade-up"  data-aos-duration="1000" class="menu__top" href="#">About</a>
                                 <a data-aos="fade-up"  data-aos-duration="1500" class="menu__top"  href="#">Skills</a>
                                 <a  data-aos="fade-up"  data-aos-duration="2000" class="menu__top" href="#">Blog</a>
                                 <a  data-aos="fade-up"  data-aos-duration="2500" class="menu__top" href="#">Contacts</a>
-                        </div>
+                            </div>
 
                         @include('front.components.nav-components',[
                             'title'=>$item['title'],
@@ -25,7 +25,7 @@
                                 </div>
                         </div>
                         </div>
-                        <div>
+                        <div class="mdi__position">
                             <div >
                                 <a href="#" class="mdi mdi-facebook mdi-nav"></a>
                             </div>

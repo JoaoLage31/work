@@ -9,7 +9,7 @@
                             'description_2'=>$item['description_2'],
                             'description_3'=>$item['description_3'],
                                 ])
-                        <div data-aos="fade-up" data-aos-duration="3000" class="col-xl-5 section-1__img" style="background-image: url({{($img)}});">
+                        <div data-aos="fade-up" data-aos-duration="3000" class="col-md-6 col-xl-5 section-1__img" style="background-image: url({{($img)}});">
                         </div>
                         <!--AQUI EM BAIXO-->
                     </div>

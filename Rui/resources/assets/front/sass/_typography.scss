@@ -289,4 +289,140 @@
 }
 
 
+@include media-breakpoint-down(xs) { 
+      
+  //nav Bar
+  
+  .menu__top{
+    margin-right: 5vw;
+  }
 
+  //section_1
+
+  .section_1__title_text{
+    font-size: 2rem;
+    @include limite-text(2.5rem, 5);
+  }
+
+
+  .section_1__description_text{
+    font-style: 1rem;
+    @include limite-text(1.125rem, 7);
+    margin-bottom: 1rem;
+  }
+
+  .section_2__title_buttons {
+    margin-bottom: 3vh;
+  }
+
+  .slider_01__bottom__title{
+    font-size: 2rem !important;
+    @include limite-text(2.5rem, 2);
+  }
+
+  .pop_up{
+    .slider_01__bottom__title{
+      font-size: 2rem !important;
+      @include limite-text(2.5rem, 2);
+    }
+
+    .slider_01__bottom__date{
+      margin-top: 5vh;
+      margin-bottom: 1vh;
+    }
+
+    .slider_01__bottom__pop_up_text_p1{
+      margin-bottom: 1vh;
+      margin-top: 1vh;
+    }
+  }
+
+  .slider_01__bottom__pop_up_text_p1{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+  }
+  .slider_01__bottom__pop_up_text_p2{
+    margin-bottom: 2vh;
+    font-family: $PlayFair;
+    font-size: 1.5rem;
+  }
+
+}
+
+@include media-breakpoint-down(md) { 
+  .section_1__description_text{
+    font-style: 1rem;
+    @include limite-text(1.125rem, 8);
+    margin-bottom: 1vh;
+  }
+
+    .partilhar2 {
+      margin-top: 7.5vh !important;
+  }
+
+  .slider_01__bottom__title{
+    font-size: 1.5rem ;
+    @include limite-text(2.5rem, 2);
+  }
+
+  .slider_01__bottom__date{
+    font-size: 1rem ;
+    @include limite-text(1.5rem, 1);
+  }
+
+  .pop_up{
+    .slider_01__bottom__title{
+      font-size: 2.5rem !important;
+      @include limite-text(3rem, 2);
+    }
+
+    .slider_01__bottom__date{
+      font-size: 1.4rem;
+      margin-top: 5vh;
+      margin-bottom: 2vh;
+    }
+
+    .slider_01__bottom__pop_up_text_p1{
+      margin-bottom: 1vh;
+      margin-top: 1vh;
+      font-size: 1rem;
+    }
+  }
+
+  .slider_01__bottom__pop_up_text_p1{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+  }
+  .slider_01__bottom__pop_up_text_p2{
+    margin-bottom: 2vh;
+    font-family: $PlayFair;
+    font-size: 1.5rem;
+  }
+
+}
+
+@include media-breakpoint-down(lg) { 
+
+  .small-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    @include limite-text(2rem, 2);
+   }
+
+   .section_1__description_text{
+    font-style: 1rem;
+    @include limite-text(1.125rem, 7);
+  }
+
+  .slider_01__bottom__title{
+    font-size: 1.7rem ;
+    @include limite-text(2rem, 2);
+  }
+
+  .slider_01__bottom__date{
+    font-size: 1rem ;
+    @include limite-text(1.5rem, 1);
+    margin-bottom: 1vh;
+  }
+}
