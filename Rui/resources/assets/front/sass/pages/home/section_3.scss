@@ -349,3 +349,24 @@
 
 
 
+@media (min-width: 1000px) and (max-width: 1045px) { 
+
+    @media (min-height: 1300px) and (max-height: 1400px) { 
+        
+        .section_3__behind {
+            height: 62vh;
+        }
+
+        .modal-body .img {
+            top: 24.5vh;
+        }
+
+        .modal-body .img {
+            min-height: 19vh;
+            max-height: 19vh;
+        }
+        .partilhar {
+            top: 50vh;
+        }
+    }
+  }   

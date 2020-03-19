@@ -73,3 +73,9 @@
         </div>
     </div>
 </div>
+<div class="made">
+    <div>
+        <h6 class="made-it col-12">Copryright 2020 @ Rui Pedro Gonçalves</h6>
+        <h6 class="made-it col-12">Desenvolvido por 4POR4</h6>
+    </div>
+</div>

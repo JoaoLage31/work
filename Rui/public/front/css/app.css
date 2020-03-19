@@ -10747,6 +10747,12 @@ a.text-dark:focus {
   display: none;
 }
 
+.made-it {
+  text-align: right;
+  color: #897570;
+  font-size: 0.8rem;
+}
+
 .partilhar__buttons {
   font-size: 1rem;
   color: #424441;
@@ -11232,6 +11238,15 @@ a.text-dark:focus {
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
   }
+
+  .info_container__title {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    line-height: 1.4rem;
+    max-height: 4.2rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -11300,6 +11315,32 @@ a.text-dark:focus {
     margin-bottom: 2vh;
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1045px) and (min-height: 1300px) and (max-height: 1400px) {
+  .section_1__description_text {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 7;
+    line-height: 1.125rem;
+    max-height: 7.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .partilhar2 {
+    margin-top: 0vh !important;
+  }
+
+  .slider_01__bottom__title {
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-height: 2rem;
+    min-height: 4rem;
+    max-height: 4rem;
   }
 }
 
@@ -11685,6 +11726,18 @@ body {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1045px) and (min-height: 1300px) and (max-height: 1400px) {
+  .section_2 {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+  }
+
+  .partilhar3 {
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+  }
+}
+
 .slick-slide {
   margin-left: 25px !important;
   margin-right: 25px !important;
@@ -12024,6 +12077,25 @@ body {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1045px) and (min-height: 1300px) and (max-height: 1400px) {
+  .section_3__behind {
+    height: 62vh;
+  }
+
+  .modal-body .img {
+    top: 24.5vh;
+  }
+
+  .modal-body .img {
+    min-height: 19vh;
+    max-height: 19vh;
+  }
+
+  .partilhar {
+    top: 50vh;
+  }
+}
+
 .section_4 {
   margin-top: 50vh;
   display: flex;
@@ -12143,6 +12215,28 @@ body {
 
   .contact_me_off {
     display: none !important;
+  }
+
+  .made {
+    justify-content: center !important;
+    margin-top: 10vh;
+  }
+
+  .made-it {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.made {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1000px) and (max-width: 1045px) and (min-height: 1300px) and (max-height: 1400px) {
+  .section_4__behind {
+    height: 55vh;
   }
 }
 

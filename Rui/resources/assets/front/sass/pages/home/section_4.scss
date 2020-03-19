@@ -113,5 +113,30 @@
     .contact_me_off{
         display: none !important;
     }
+
+    .made{
+        justify-content:  center !important;
+        margin-top: 10vh;
+    }
+
+    .made-it{
+        text-align: center;
+        justify-content: center;
+    }
 }
 
+.made{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1000px) and (max-width: 1045px) { 
+
+    @media (min-height: 1300px) and (max-height: 1400px) { 
+        
+        .section_4__behind {
+            height: 55vh;
+        }
+    }
+  }   
