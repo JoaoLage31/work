@@ -5,6 +5,17 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $number-lines;
     line-height: $line-height;
+ //   min-height: $line-height * $number-lines;
+    max-height: $line-height * $number-lines;
+  }
+
+  @mixin limite-text2($line-height, $number-lines) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    //display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $number-lines;
+    line-height: $line-height;
     min-height: $line-height * $number-lines;
     max-height: $line-height * $number-lines;
   }
@@ -13,6 +24,11 @@
   font-size: 1rem;
   color: $text;
   margin-right: 5vh;
+}
+
+
+.partilhar__buttons a:hover{
+  cursor: pointer !important;
 }
 
 .partilhar__buttons a{
@@ -26,6 +42,7 @@
 .big-title {
   color: white;
   font-family: $PlayFair;
+  text-transform: uppercase;
 }
 
 .title {}
@@ -114,7 +131,6 @@
 .slider_01__bottom__add_info_text{
   font-family: $OpenSans;
   color: $text;
-  margin-top: 1rem !important;
 }
 
 .section_3__title_buttons{
@@ -172,17 +188,16 @@
   text-transform: uppercase;
   color: $text;
 }
-@include media-breakpoint-only(xl) { 
+@include media-breakpoint-up(xl) { 
 
     // navBar
   .menu__top{
     font-size: 1.2rem;
-    margin-right: 3rem;
+    margin-right: 1rem;
   }
 
   .menu__top:after{
     font-size: 1.2rem;
-    margin-right: 3rem;
     color: rgb(255, 255, 255); 
     mix-blend-mode: difference;
   }
@@ -209,7 +224,8 @@
 
   .section_1__description_text{
     font-size: 1rem;
-    @include limite-text(1.125rem, 7);
+    @include limite-text(1.225rem, 7);
+    margin-bottom: 30px;
   }
 
   // section_2
@@ -227,12 +243,12 @@
   }
   .info_container__title{
     font-size: 1rem;
-    @include limite-text(1rem, 1);
+    @include limite-text(1.4rem, 3);
     margin-bottom: 2vh;
   }
   .info_container__description{
-    font-size: 0.85rem;
-    @include limite-text(1rem, 1);
+    font-size: 1rem;
+    @include limite-text(2rem, 2);
     margin-bottom: 3vh;
   }
 
@@ -246,7 +262,15 @@
 
   .slider_01__bottom__title{
     font-size: 1.5rem;
-    @include limite-text(2rem, 2);
+    @include limite-text2(2rem, 2);
+    margin-bottom: 10px;
+  }
+
+  .pop_up{
+    .slider_01__bottom__title{
+      font-size: 1.5rem;
+      @include limite-text(2rem, 2) ;
+    }
   }
 
   .slider_01__bottom__add_info_text{
@@ -275,6 +299,7 @@
 
   .slider_01__bottom__pop_up_text_p1{
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
 
   .slider_01__bottom__pop_up_text_p2{
@@ -301,66 +326,43 @@
   
 }
 
+@include media-breakpoint-down(lg) { 
 
-@include media-breakpoint-down(xs) { 
-      
-  //nav Bar
-  
-  .menu__top{
-    margin-right: 5vw;
-  }
+  .small-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    @include limite-text(2rem, 2);
+   }
 
-  //section_1
-
-  .section_1__title_text{
-    font-size: 2rem;
-    @include limite-text(2.5rem, 5);
-  }
-
-
-  .section_1__description_text{
+   .section_1__description_text{
     font-size: 1rem;
     @include limite-text(1.125rem, 7);
-    margin-bottom: 1rem;
-  }
-
-  .section_2__title_buttons {
-    margin-bottom: 3vh;
   }
 
   .slider_01__bottom__title{
-    font-size: 2rem !important;
-    @include limite-text(2.5rem, 2);
+    font-size: 1.7rem ;
+    @include limite-text(2rem, 2);
   }
 
-  .pop_up{
-    .slider_01__bottom__title{
-      font-size: 2rem !important;
-      @include limite-text(2.5rem, 2);
-    }
-
-    .slider_01__bottom__date{
-      margin-top: 5vh;
-      margin-bottom: 1vh;
-    }
-
-    .slider_01__bottom__pop_up_text_p1{
-      margin-bottom: 1vh;
-      margin-top: 1vh;
-    }
+  .slider_01__bottom__date{
+    font-size: 1rem ;
+    @include limite-text(1.5rem, 1);
+    margin-bottom: 1vh;
   }
 
   .slider_01__bottom__pop_up_text_p1{
-    margin-top: 3vh;
     margin-bottom: 2vh;
+    font-size: 1rem;
   }
   .slider_01__bottom__pop_up_text_p2{
     margin-bottom: 2vh;
     font-family: $PlayFair;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-
 }
+
+
 
 @include media-breakpoint-down(md) { 
   .section_1__description_text{
@@ -375,7 +377,7 @@
 
   .slider_01__bottom__title{
     font-size: 1.5rem ;
-    @include limite-text(2.5rem, 2);
+    @include limite-text2(2.5rem, 2);
   }
 
   .slider_01__bottom__date{
@@ -414,38 +416,63 @@
 
 }
 
-@include media-breakpoint-down(lg) { 
 
-  .small-title {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-top: 2rem;
-    @include limite-text(2rem, 2);
-   }
+@include media-breakpoint-down(xs) { 
+      
+  //nav Bar
+  
+  .menu__top{
+    margin-right: 5vw;
+  }
 
-   .section_1__description_text{
+  //section_1
+
+  .section_1__title_text{
+    font-size: 2rem;
+    @include limite-text(2.5rem, 5);
+  }
+
+
+  .section_1__description_text{
     font-size: 1rem;
     @include limite-text(1.125rem, 7);
+    margin-bottom: 1rem;
+  }
+
+  .section_2__title_buttons {
+    margin-bottom: 3vh;
   }
 
   .slider_01__bottom__title{
-    font-size: 1.7rem ;
-    @include limite-text(2rem, 2);
+    font-size: 2rem !important;
+    @include limite-text2(3rem, 2);
   }
 
-  .slider_01__bottom__date{
-    font-size: 1rem ;
-    @include limite-text(1.5rem, 1);
-    margin-bottom: 1vh;
+  .pop_up{
+    .slider_01__bottom__title{
+      font-size: 2rem !important;
+      @include limite-text(2.5rem, 2);
+    }
+
+    .slider_01__bottom__date{
+      margin-top: 5vh;
+      margin-bottom: 1vh;
+    }
+
+    .slider_01__bottom__pop_up_text_p1{
+      margin-bottom: 1vh;
+      margin-top: 1vh;
+    }
   }
 
   .slider_01__bottom__pop_up_text_p1{
+    margin-top: 3vh;
     margin-bottom: 2vh;
-    font-size: 1rem;
   }
   .slider_01__bottom__pop_up_text_p2{
     margin-bottom: 2vh;
     font-family: $PlayFair;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
+
 }

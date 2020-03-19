@@ -1,16 +1,22 @@
-<div>
+<div id="sec_3">
     <div data-aos="fade-left"  data-aos-duration="1000" class="section_3__behind"></div>
     <div class="section_3">
         @foreach($data as $key=>$collection)
             <div data-aos="fade-right"  data-aos-duration="2000" class="section_3__title_posisiton col-xl-3"> <h2 class="section_3__title_buttons"> {{$collection['title']}} </h2></div>
         @endforeach
         
-        <div class="slider_01__arrows d-flex justify-content-end">
+        <div class="slider_01__arrows col-12">
             <div class="col-1 col-md-1 col-xl-1">
                 <div><img  class="next" src="{{URL::asset('front/media/svgs/setadireita.svg')}}" alt=""></div>
                 <div><img  class="prev" src="{{URL::asset('front/media/svgs/setaesquerda.svg')}}" alt=""></div>
             </div>
         </div>
+        <div class="slider_01__arrows2 col-12 d-flex justify-content-end">
+          <div class="d-flex col-2 col-md-1 col-xl-1">
+            <div><img  class="prev" src="{{URL::asset('front/media/svgs/setaesquerda.svg')}}" alt=""></div>
+              <div><img  class="next" src="{{URL::asset('front/media/svgs/setadireita.svg')}}" alt=""></div>
+          </div>
+      </div>
         <div  class="slider_01">
             @foreach($data as $key=>$collection)
                     @foreach($collection['items'] as $item)

@@ -2,7 +2,7 @@
     @foreach($collection['items'] as $item)
         @foreach($item["images"] as $img)
             <div class="d-flex justify-content-center">
-                <div class="col-xl-10 section-1">
+                <div id="sec_1" class="col-xl-10 section-1">
                     @include('front.components.sections_components.section_1-component',[
                             'title'=>$item['title'],
                             'description_1'=>$item['description_1'],
@@ -29,10 +29,9 @@
   @push('scripts')
 
   <script>
-    $(document).ready(function() { 
         // filterSelection("Rent");
-        AOS.init({})
-     });
+        AOS.init({
+        })
 
   </script>
 

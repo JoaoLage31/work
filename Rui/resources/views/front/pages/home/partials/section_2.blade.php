@@ -6,14 +6,8 @@
         <br>
         @endforeach
     </div>
-    <div data-aos="fade-right"  data-aos-duration="2000" class="section_2__behind">
+    <div id="sec_2" data-aos="fade-right"  data-aos-duration="2000" class="section_2__behind">
         <div class="section_2__behind_1"></div>
-        <div data-aos="fade-left"  data-aos-duration="2000" class="partilhar3 d-flex align-items-center">
-            <div class="partilhar__buttons d-flex">
-                <a  href="">Download the CV</a>
-              </div>
-            <div class="line3"></div>
-        </div>
     </div>
     <div class="invisible col-lg-1 col-xl-2"></div>
     <div class="col-xl-6">
@@ -38,8 +32,14 @@
         @endforeach
     </div>
     
+    
 </div>
-
+<div data-aos="fade-left"  data-aos-duration="2000" class="partilhar3 d-flex align-items-center">
+    <div class="partilhar__buttons d-flex">
+        <a  href="#">Download the CV</a>
+      </div>
+    <div class="line3"></div>
+</div>
 
 
 
@@ -48,9 +48,11 @@
 function filterSelection(el) {
       $('.btn').removeClass('active');    
       $('.info_container').addClass('none');
+      $('.info_container').addClass('effect');
       var idContainer = $(el).attr("data-target");
       $(el).addClass('active');
       $(idContainer).removeClass('none');
+      $('.info_container').removeClass('effect');
 }
 
      $('.slector-filter').on('click', function(){

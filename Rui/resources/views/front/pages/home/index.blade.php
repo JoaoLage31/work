@@ -20,18 +20,7 @@
 
 @include('front.pages.home.partials.section_1',['data'=>$result])
 
-@php
-    $result = ['0'=>
-        [
-        'items'=>[[
-            'title'=>'I advise companies and NGOs in initiatives and campaigns',
-            'description_1'=>'Im a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.',
-            'description_2'=>'I’m a great place for you to tell a story and let your users know a little more about you. This is a great space to write a long text about your company and your services.',
-            'description_3'=>'You can use this space to go into a little more detail about your company. Talk about your team and what services you provide',
-            'images'=>['front/media/img/img1.jpg']
-    ]
-    ]]];
-@endphp
+
 
 @php
     $result =
@@ -79,22 +68,30 @@
         'name'=>'Work Experience',
         'items'=>[[
             'field_date_1'=>'Dez 2017 - Atualidade',
-            'field_title_1'=>'Coordenador do Gab. de Novos Projectos  da SCMP',
+            'field_title_1'=>'Consultor em  estratégia empresarial
+Consultor organizacional e estratégico das Organizações 
+da Economia Social',
             'field_description_1'=>'Associação de Turismo do Porto',
             ],
             [
             'field_date_1'=>'Dez 2017 - Atualidade',
-            'field_title_1'=>'Coordenador do Gab. de Novos Projectos  da SCMP',
+            'field_title_1'=>'Consultor em  estratégia empresarial
+Consultor organizacional e estratégico das Organizações 
+da Economia Social',
             'field_description_1'=>'Associação de Turismo do Porto',
             ],
             [
             'field_date_1'=>'Dez 2017 - Atualidade',
-            'field_title_1'=>'Coordenador do Gab. de Novos Projectos  da SCMP',
+            'field_title_1'=>'Consultor em  estratégia empresarial
+Consultor organizacional e estratégico das Organizações 
+da Economia Social',
             'field_description_1'=>'Associação de Turismo do Porto',
         ],
         [
             'field_date_1'=>'Dez 2017 - Atualidade',
-            'field_title_1'=>'Coordenador do Gab. de Novos Projectos  da SCMP',
+            'field_title_1'=>'Consultor em  estratégia empresarial
+Consultor organizacional e estratégico das Organizações 
+da Economia Social',
             'field_description_1'=>'Associação de Turismo do Porto',
             ],
             [

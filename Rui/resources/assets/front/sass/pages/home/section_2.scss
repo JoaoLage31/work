@@ -1,6 +1,5 @@
 .section_2{
     margin-top:50vh;
-    margin-bottom: 80vh;
     display: flex;
     
     &__behind{
@@ -23,6 +22,12 @@
     }
 }
 
+
+
+.individual_skill{
+    margin-bottom: 8vh;
+}
+
 .mobile-on{
     display: none;
 }
@@ -36,17 +41,23 @@
 }
 
 .none{
-    visibility: hidden;
+    opacity: 0 !important;
     max-height: 0;
     margin-bottom: 0 !important;
 }
 
+.info_container {
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
 .partilhar3{
     width: 71vw;
-        position: absolute;
-        height: 320%;
-        z-index: -1;
+        height: 0%;
         margin-left: 80vw;
+        margin-top: 40vh;
+        margin-bottom: 30vh;
 }
 
 .line3{
@@ -69,7 +80,8 @@
 
 @include media-breakpoint-down(md) { 
 .section_2{
-    margin-bottom: 60vh;
+    margin-top: 25vh;
+    margin-bottom: 5vh;
 }
 
     .invisible{
@@ -77,10 +89,9 @@
     }
     
     .partilhar3{
+        margin-top:30vh;
+        margin-bottom: 25vh;
         width: 71vw;
-        position: absolute;
-        height: 300%;
-        z-index: -1;
         margin-left: 55vw;
 }
     
@@ -92,7 +103,6 @@
 
     .section_2{
         margin-top:15vh;
-        margin-bottom: 20vh;
         display: block;
 
         &__behind{
@@ -100,16 +110,21 @@
         }
     
         &__behind_1{
-            display: none;
+            display: block;
+            width: 100vw;
+            height: 130%;
+            margin-top: 4vh;
         }
     }
 
     .partilhar3{
         margin-left: 20vw !important;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
 }
     .mobile-on{
         display: block;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
     }
 
     .mobile-off{

@@ -84,6 +84,9 @@
     .section_4__info_phone{
         margin-bottom: 2vh;
     }
+    .section_4__info{
+        width: 75%;
+    }
 }
 
 
@@ -91,10 +94,11 @@
 
     .section_4{
         display: block;
-        margin-bottom: 15vh;
         margin-top: 20vh;
         &__behind{
-            display: none;
+            width: 100vw;
+            height: 70vh;
+            margin-top: 60vh;
         }
     }    
     .section_4_flex{
@@ -103,7 +107,7 @@
 
     .contact_me_on{
         display: block !important;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
     }
 
     .contact_me_off{
