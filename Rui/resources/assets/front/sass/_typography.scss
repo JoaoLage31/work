@@ -66,6 +66,12 @@
   color: white;
   font-family: $PlayFair;
   @include limite-text(1.6rem, 1);
+  opacity: 0.6 !important;
+}
+
+.menu__top:hover{
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 .menu__curriculum{

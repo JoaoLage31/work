@@ -10788,6 +10788,12 @@ a.text-dark:focus {
   -webkit-line-clamp: 1;
   line-height: 1.6rem;
   max-height: 1.6rem;
+  opacity: 0.6 !important;
+}
+
+.menu__top:hover {
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 .menu__curriculum {
