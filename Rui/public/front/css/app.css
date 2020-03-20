@@ -11253,6 +11253,10 @@ a.text-dark:focus {
     line-height: 1.4rem;
     max-height: 4.2rem;
   }
+
+  .menu__top {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 575.98px) {
